@@ -1,0 +1,12 @@
+## 일부 삼성 기기에서 이상한 현상이 보이는 것을 확인
+-> 계정 저장 거부 앱, 사이트 리스트에 plaync가 포함되어서 발생한 이슈라고 판단
+<img src="https://user-images.githubusercontent.com/38804451/77055543-6be0b480-6a14-11ea-99e1-e851b72158c7.jpeg" width="400px"/>
+
+## 테스트
+타 사이트를 이용해 아니오를 누르면 리스트에 포함되는 것을 확인하는 과정
+<img src="https://user-images.githubusercontent.com/38804451/77055546-6c794b00-6a14-11ea-9cf5-0c84ea83f5fa.jpeg" width="400px"/>
+<img src="https://user-images.githubusercontent.com/38804451/77055547-6daa7800-6a14-11ea-8bfa-3c7d9682c8db.jpeg" width="400px"/>
+<img src="https://user-images.githubusercontent.com/38804451/77055533-684d2d80-6a14-11ea-82dc-e81dc0f7f14f.jpeg" width="400px"/>
+
+이후, 리스트에서 삭제하면 다시 정상적으로 작동할 수 있음을 확인 (단, 약 3분이내로 적용되는데 시간차가 있음)
+
