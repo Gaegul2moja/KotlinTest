@@ -1,0 +1,71 @@
+Your Second Kotlin Android App
+
+> 본 문서는 raywenderlich의  [Your Second Kotlin Android App](https://www.raywenderlich.com/7503473-your-second-kotlin-android-app)을 기반으로 작성되었습니다.
+
+# OVERVIEW
+- RecyclerView
+- R/W of Data
+- Dialog, Action Buttons
+- Multiple Activities
+- Integrate Android Fragments
+    - using new interfaces
+- Using Andrid Jetpack
+    - tools which makes android development easier
+- 3.5.2를 기반으로 한 루틴
+
+# TODO LIST 요구사항
+- List Item (Reused 되는 것. 따라서, Recyclerview를 써야함)
+    
+
+
+# 필기
+- Customize Android Studio (Workspace 정리하기 및 파악하기)
+    - easy to switch file (Navigation Bar를 이용한다)
+    - 좌측 상단의 Project, Android, Project Files 등 선택하는게 View를 선택하는거라고 보면 됨 (테스트를 선택하면 테스트들만 볼 수 있음)
+    - BookMarks
+        - 맥은 F3눌러서 북마크를 설정하고 좌측의 Favorites 탭에서 빠르게 찾을 수 있다
+        - 새로 Activities 등의 이름을 가진 목록을 Favorities에서 추가해서 그 하단에 넣어 관리 할 수도 잇음
+    - Structures
+        - 특정 파일 내에서 이걸 누르면 해당 파일 내의 메소드들, 상속 관계 등을 볼 수 있음
+        - 누르면 한번에 그곳으로 점프할 수 있다 (매우 유용해보임)
+    - 하단에 나오는 TOOL Windows
+        - View -> Tool Windows 를 누르면 거기서 원하는 것을 열어서 볼 수 있음
+    - Presentation Mode
+        - 코드만 꽉 채워서 보는 것
+    - Distraction Free Mode
+        - 코드만 꽉채워 보기는 하는데, shortcut들이 있다
+    - Full Screen Mode
+        - 그냥 전체화면
+    - Support Library
+        - androidX -> 모든 패키지를 안드로이드 x 네임스페이스로 옮겨주었다.
+        - androidX로의 마이그레이션은 그렇게 어렵지 않다
+    - Gradle
+        - Key component of development
+        - builds and manages of the dependencies of the app
+        - build gradle file을 통해서 dependency의 configuration이 이루어진다
+            - project build.gradle -> effects entire project
+            - module build.gradle -> effects only your app
+            - sync is to update changes in your app
+- RecyclerView
+    - Recyclerview는 현존하는 item을 재사용하는 특징이 있다
+    - 여러개를 생성하야할 때 적게 생성할 수 있는 장점이 있다
+    - 구성
+        - Adapter
+            - 예시 ) c port만 있는 맥북 프로가 있고, 이를 Hdmi로만 연결되는 모니터에 화면을 출력하고 싶다고 가정하자. 모니터와 맥북의 communication을 위해서는 media adapter를 이용해 맥북이 모니터로 보내는 시그널을 보내야한다.
+            - 표현해야하는 array와 Recyclerview 사이에 Recycler Adapter는 middle man이 된다
+                - Recyclerview 가 얼만큼의 row가 있는지 등을 질문하면, datasouce에게 대답이 위임된다.
+        - View Holder
+            - Recyclerview의 한 row를 의미한다.
+            - Recyclerview 는 viewholder를 알아야 하며 업데이트 하는 역할을 한다.
+            - Adapter는 viewholder를 생성해서 Recyclerview로 넘긴다.
+            - Recyclerview가 새로운 row를 생성할 때, adapter에게 새로운 viewholder를 configure하도록 한다.
+
+
+            ###### Build an Adapter 2분부터 수강######
+- include
+    - 반복을 줄여주고 간단하게 만들어주는 장점이 있다
+
+# 느낀점
+- 역시나 여기도 UI를 기준으로 xml을 편집해서 그렇게 하기 싫은 자존심의 나는 따라하기가 번거로웠다
+    - 예를 들어서 위치를 맞추거나 추가하는데 코드로 해서 조금더 시간이 걸린다거나 등의 자잘한 부분들
+
